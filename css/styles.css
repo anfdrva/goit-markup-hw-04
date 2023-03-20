@@ -142,6 +142,9 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title{
@@ -178,7 +181,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 /* -----------------QUALITIES------------------ */
 
 .qualities-item{
-    max-width: 264px;
+    max-width: calc((100% - 72px) / 4);
 }
 
 .qualities-list{
@@ -188,7 +191,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .qualities-icon-box{
-    width: 264px;
+   
     height: 112px;
     background-color: var(--cloud-color);
     border-radius: 4px;
@@ -336,7 +339,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 }
 
 .customers-item{
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
 }
 
@@ -348,7 +351,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     fill: var(--helper-text-color);
 }
 
@@ -372,7 +375,11 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .footer-container{
     display: flex;
-    gap: 120px;
+    /* gap: 120px; */
+}
+
+.footer-info{
+    margin-right: 120px;
 }
 
 .footer-logo{
@@ -469,15 +476,20 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 .portfolio-btn:focus{
     color: var(--white-color);
     background-color: var(--hover-color);
-    border: 0;
+    border-color: var(--hover-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
 }
 
 .portfolio-card-list{
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    display: block;
 }
 
 .portfolio-card-content{
@@ -506,9 +518,4 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
 
 .portfolio-card-item{
     width: calc((100% - 48px) / 3);
-}
-
-.portfolio-card-item:hover,
-.portfolio-card-item:focus{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
